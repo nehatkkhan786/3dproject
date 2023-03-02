@@ -1,0 +1,19 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body::-webkit-scrollbar { 
+  display: none; 
+}
+
+.HomeWrapper{
+  height: 100svh;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  color:#ffffff;
+  overflow-y: auto;
+  scrollbar-width: none;
+
+}
