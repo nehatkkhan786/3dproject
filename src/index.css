@@ -3,17 +3,34 @@
   padding: 0;
 }
 
-body::-webkit-scrollbar { 
-  display: none; 
+*::-webkit-scrollbar {
+  display: none;
 }
+
 
 .HomeWrapper{
   height: 100svh;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
-  background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
-  color:#ffffff;
+  background:#202020;
+  color:#A9A9A9;
   overflow-y: auto;
   scrollbar-width: none;
 
+}
+.animeIcon{
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
