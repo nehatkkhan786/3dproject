@@ -44,7 +44,7 @@ const Hero = () => {
                   <RedditIcon sx={{fontSize:{xs:26, md:36},':hover':{color:'#E95420'}}} />
               </Box>
              
-                <IconButton  className='animeIcon' sx={{mt:{xs:8, md:25, lg:25}}}>
+                <IconButton  className='animeIcon' sx={{mt:{xs:8, md:20, lg:24}}}>
                     <SouthIcon color='primary' sx={{ fontSize:{xs:40, md:50}}}/>
                 </IconButton>
               
