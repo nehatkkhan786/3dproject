@@ -23,14 +23,14 @@ const Navbar = () => {
         <Box sx={{display:'flex', justifyContent:'space-between', paddingTop:2, alignItems:'center'}}>
 
             {/* Logo */}
-            <Box component='img' src={Logo1} sx={{width:{xs:150, sm:150, md:220, lg:220}, height:{xs:60, sm:60, md:80, lg:80}, cursor:'pointer',}}/>
+            <Box component='img' src={Logo1} sx={{width:{xs:150, sm:150, md:200, lg:200}, height:{xs:60, sm:60, md:80, lg:80}, cursor:'pointer',}}/>
 
             {/* Links */}
             <Box sx={{display:{xs:'none', sm:'none', md:'flex', lg:'flex'}, gap:4, alignItems:'center' }}>
-                <Typography  sx={{fontSize:16, cursor:'pointer', textTransform:'uppercase', transition: 'color 0.2s ease-in-out', ':hover':{color:'#E95420', transition: 'color 0.2s ease-in-out',} }}>About </Typography>
-                <Typography sx={{fontSize:16, cursor:'pointer', textTransform:'uppercase', transition: 'color 0.2s ease-in-out', ':hover':{color:'#E95420', transition: 'color 0.2s ease-in-out',}}}>Services</Typography>
-                <Typography sx={{fontSize:16, cursor:'pointer', textTransform:'uppercase', transition: 'color 0.2s ease-in-out', ':hover':{color:'#E95420', transition: 'color 0.2s ease-in-out',}}}>Projects</Typography>
-                <Typography sx={{fontSize:16, cursor:'pointer', textTransform:'uppercase', transition: 'color 0.2s ease-in-out', ':hover':{color:'#E95420', transition: 'color 0.2s ease-in-out',}}}>Blog</Typography>  
+                <Typography  sx={{fontSize:12, cursor:'pointer', textTransform:'uppercase', transition: 'color 0.2s ease-in-out', ':hover':{color:'#E95420', transition: 'color 0.2s ease-in-out',} }}>About </Typography>
+                <Typography sx={{fontSize:12, cursor:'pointer', textTransform:'uppercase', transition: 'color 0.2s ease-in-out', ':hover':{color:'#E95420', transition: 'color 0.2s ease-in-out',}}}>Services</Typography>
+                <Typography sx={{fontSize:12, cursor:'pointer', textTransform:'uppercase', transition: 'color 0.2s ease-in-out', ':hover':{color:'#E95420', transition: 'color 0.2s ease-in-out',}}}>Projects</Typography>
+                <Typography sx={{fontSize:12, cursor:'pointer', textTransform:'uppercase', transition: 'color 0.2s ease-in-out', ':hover':{color:'#E95420', transition: 'color 0.2s ease-in-out',}}}>Blog</Typography>  
                 <Button size='medium' variant='contained' endIcon={<EmojiPeopleIcon/>} sx={{ml:4, display:{xs:'none', sm:'none', md:'flex', lg:'flex'}}}>Say Hello</Button>
             </Box>
         
