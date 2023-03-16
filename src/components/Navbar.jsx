@@ -1,9 +1,10 @@
-import { Box, Button, Container, IconButton, Link, Menu, MenuItem, Typography } from '@mui/material'
-import React, { useState } from 'react'
+import { Box, Button, Container, IconButton, Menu, MenuItem, Typography } from '@mui/material'
+import React, { useRef, useState } from 'react'
 import Logo1 from '../assets/white_transparent.webp'
 import MenuOpenIcon from '@mui/icons-material/MenuOpen';
 import EmojiPeopleIcon from '@mui/icons-material/EmojiPeople';
 import CloseIcon from '@mui/icons-material/Close';
+
 
 const Navbar = () => {
     const [anchorElm, setAnchorElm] = useState(null)
@@ -18,6 +19,10 @@ const Navbar = () => {
         setAnchorElm(e.currentTarget);
         setOpen(true)
     }
+
+    
+
+
   return (
    <Container maxWidth='xl'>
         <Box sx={{display:'flex', justifyContent:'space-between', paddingTop:2, alignItems:'center'}}>
