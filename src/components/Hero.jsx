@@ -21,7 +21,7 @@ const Hero = () => {
 
   return (
    <Box sx={{height:'100svh', scrollSnapAlign:'center'}}>
-          <Navbar/>
+          <Navbar />
           <Container maxWidth='md' sx={{height:'100%'}}>
             <Box sx={{display:'flex', flexDirection:'column',  alignItems:'center',  justifyContent:'center', mt:4,  width:'100%',}}>
               {/* Main Image */}

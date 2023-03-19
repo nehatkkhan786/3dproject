@@ -1,34 +1,38 @@
 import { Box, Container, Typography } from "@mui/material";
-import React, { forwardRef } from "react";
+import React from "react";
 import Me from "./Me";
 
 const Who = () => {
   return (
-    <Box sx={{ height: "100svh", scrollSnapAlign: "center" }}>
+    <div id="who">
+    <Box  sx={{ height: "100svh", scrollSnapAlign: "center" }} >
       <Container maxWidth="lg" sx={{ height: "100%" }}>
+        <Typography sx={{fontSize:{xs:20, md:24}, paddingTop:2, textAlign:'center', textDecoration:'underline', textTransform:'uppercase'}}>Who AM I</Typography>
         <Box
           sx={{
             display: "flex",
-            justifyContent: { sx: "space-around", md: "space-between" },
+            justifyContent: { xs: "space-around", md: "space-between", lg:'space-between' },
             alignItems: "center",
             height: "100%",
-            gap: 2,
+            gap:{xs:1},
             flexDirection: { xs: "column", md: "row" },
+            overflow: "hidden"
           }}
         >
           {/* For About Me Image */}
           <Box
             sx={{
-              width: { xs: "100%", md: "100%", lg: "100%" },
-              height: { xs: 250, md: "100%", lg: "100%" },
+              width: { xs: "100%",  },
+              height: { xs: 250, md: '100%', lg: '100%' }, 
             }}
+          
           >
             <Me />
           </Box>
           {/* For About Me Content */}
           <Box sx={{ width: { xs: "100%" } }}>
             <Typography
-              sx={{ textAlign: "justify", fontSize: { xs: 16, md: 18 } }}
+              sx={{ textAlign: "justify", pb:{xs:8, md:0, lg:0}, fontSize: { xs: 16, md: 18 } }}
             >
               I am a technology enthusiast with a passion for building beautiful
               and functional websites. With a background in network engineering
@@ -44,7 +48,8 @@ const Who = () => {
         </Box>
       </Container>
     </Box>
+    </div>
   );
 };
 
-export default forwardRef(Who);
+export default (Who);
