@@ -2,9 +2,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Stage } from "@react-three/drei";
 import React, { Suspense } from "react";
 import Model from "./Modal";
-import { isMobile } from 'react-device-detect';
-import { CircularProgress } from "@mui/material";
-import { Circle } from "@react-three/drei";
+
 
 
 const Me = () => {
