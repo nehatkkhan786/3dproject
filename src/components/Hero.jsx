@@ -33,7 +33,7 @@ const Hero = () => {
               <Box sx={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', mt:2}}>
                   <Typography sx={{fontSize:{xs:20, sm:18, md:20, lg:20}}}> Salam 👋 </Typography>
                   {/* What you are title */}
-                  <Typography sx={{fontSize:{xs:18, sm:22, md:24, lg:24}}}>My name is Nehat Khan</Typography>
+                  <Typography sx={{fontSize:{xs:18, sm:22, md:24, lg:24}}}>My name is Nehat</Typography>
                   <Typography sx={{fontSize:{xs:16, sm:20, md:26, lg:26}, mt:1, textTransform:'uppercase'}}>Developer | Tech Savy | Father</Typography>
 
                   {/* <Box sx={{display:'flex', gap:1}}>
