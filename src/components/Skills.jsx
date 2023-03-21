@@ -13,12 +13,12 @@ import Wordpress from '../assets/skills-icons/wordpress.png'
 const skill = [
   {id:1, name:'Html', icon:HTML5},
   {id:2, name:'css', icon:CSS},
-  {id:3, name:'Javasccript', icon:Javascript},
   {id:4, name:'Python', icon:Python},
-  {id:5, name:'React', icon:ReactIcon},
-  {id:6, name:'Linux', icon:Linux },
-  {id:7, name:'Wordpress', icon:Wordpress },
   {id:8, name:'Django', icon:Django },
+  {id:3, name:'Javasccript', icon:Javascript},
+  {id:5, name:'React', icon:ReactIcon},
+  {id:7, name:'Wordpress', icon:Wordpress },
+  {id:6, name:'Linux', icon:Linux },
 ]
 
 

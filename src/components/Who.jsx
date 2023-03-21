@@ -4,8 +4,8 @@ import Me from "./Me";
 
 const Who = () => {
   return (
-    <div id="who">
-    <Box  sx={{ height: "100svh", scrollSnapAlign: "center" }} >
+    
+    <Box  sx={{ height: "100svh", scrollSnapAlign: "center" }} link='who' >
       <Container maxWidth="lg" sx={{ height: "100%" }}>
         <Typography sx={{fontSize:{xs:20, md:24}, paddingTop:2, textAlign:'center', textDecoration:'underline', textTransform:'uppercase'}}>Who AM I</Typography>
         <Box
@@ -48,7 +48,7 @@ const Who = () => {
         </Box>
       </Container>
     </Box>
-    </div>
+   
   );
 };
 
