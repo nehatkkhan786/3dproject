@@ -10,7 +10,7 @@
 
 .HomeWrapper{
   height: 100svh;
-  /* scroll-snap-type: y mandatory; */
+  scroll-snap-type: y mandatory; 
   scroll-behavior: smooth;
   background:#202020;
   color:#A9A9A9;
