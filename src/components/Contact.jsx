@@ -36,7 +36,7 @@ const Contact = () => {
              <Button fullWidth variant='outlined'>Send</Button>
              <Box sx={{display:'flex', alignItems:'center', gap:2}}>
                 <EmailIcon/> 
-                <Typography sx={{fontSize:{xs:16, md:18}}}><a style={{textDecoration:'none', color:'#A9A9A9'}} href='mailto:nehat@nehat.dev'>nehat@nehat.dev</a></Typography>
+                <Typography sx={{fontSize:{xs:16, md:18}}}><a style={{textDecoration:'none', color:'#A9A9A9'}} href='mailto:connect@nehat.dev'>connect@nehat.dev</a></Typography>
              </Box>
         </Box>
       </Container>
