@@ -48,13 +48,23 @@ const Homepage = () => {
   return (
     <div className="HomeWrapper" ref={wrapperRef}>
       <Hero />
+      <div id='about'>
+        <Who />
+      </div>
 
-      <Who />
+      <div id='skills'>
+        <Skills />
+      </div>
 
-      <Skills />
-      <Works />
+      <div id='projects'>
+        <Works />
+      </div>
+      
       <Works2 />
-      <Contact />
+
+      <div id='contact'>
+       <Contact />
+      </div>
 
       <div
         className="move-up-icon-wrapper"

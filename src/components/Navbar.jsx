@@ -39,16 +39,52 @@ const Navbar = () => {
         <Box component="img"src={Logo1}sx={{width: { xs: 150, sm: 150, md: 200, lg: 200 },height: { xs: 60, sm: 60, md: 80, lg: 80 },cursor: "pointer",}}/>
 
         {/* Links */}
-        <Box sx={{display: { xs: "none", sm: "none", md: "flex", lg: "flex" },gap: 4,alignItems: "center",}}>
+        <Box sx={{display: { xs: "none", sm: "none", md: "flex", lg: "flex" }, gap: 3,alignItems: "center",}}>
           
-            <Link to="who" smooth={true} duration={500} offset={50}>
-              <Typography  sx={{fontSize: 12,cursor: "pointer",textTransform: "uppercase",transition: "color 0.2s ease-in-out",":hover": {color: "#E95420",transition: "color 0.2s ease-in-out",},}}>
-                About
-              </Typography>
-            </Link>
-          
+          {/* <ul style={{listStyle:'none', display:'flex', gap:10}}>
+
+            <li style={{cursor:'pointer',}} >
+              <a style={{color:'inherit', textDecoration:'none', fontSize:14, textTransform:'uppercase'}} className='nav-link' href="#about">About</a>
+            </li>
+
+            <li style={{cursor:'pointer'}} >
+              <a style={{color:'inherit', textDecoration:'none', fontSize:14,  textTransform:'uppercase'}} className='nav-link'   href="#skills">Skills</a>
+            </li>
+
+            <li style={{cursor:'pointer'}} >
+              <a style={{color:'inherit', textDecoration:'none', fontSize:14,  textTransform:'uppercase'}} className='nav-link'  href="#projects">Projects</a>
+            </li>
+          </ul> */}
+
+          <a href="#about" style={{textDecoration:'none', color:'inherit'}}>
+            <Typography sx={{fontSize: 12,cursor: "pointer",textTransform: "uppercase",transition: "color 0.2s ease-in-out",":hover": {color: "#E95420",transition: "color 0.2s ease-in-out",},}}>
+              About
+            </Typography>
+          </a>
+
+          <a href="#skills" style={{textDecoration:'none', color:'inherit'}}>
+            <Typography sx={{fontSize: 12,cursor: "pointer",textTransform: "uppercase",transition: "color 0.2s ease-in-out",":hover": {color: "#E95420",transition: "color 0.2s ease-in-out",},}}>
+              Skills
+            </Typography>
+          </a>
+
+          <a href="#projects" style={{textDecoration:'none', color:'inherit'}}>
+            <Typography sx={{fontSize: 12,cursor: "pointer",textTransform: "uppercase",transition: "color 0.2s ease-in-out",":hover": {color: "#E95420",transition: "color 0.2s ease-in-out",},}}>
+              Projects
+            </Typography>
+          </a>
+      
+              {/* <Typography  sx={{fontSize: 12,cursor: "pointer",textTransform: "uppercase",transition: "color 0.2s ease-in-out",":hover": {color: "#E95420",transition: "color 0.2s ease-in-out",},}}>
+                <a href="#about">About</a>
+              </Typography> */}
+           
+
+          {/* <li style={{listStyle:'none', cursor:'pointer'}}>
+            <a href="#about" style={{textDecoration:'none'}}>About</a>
+          </li> */}
           
 
+          {/* 
           <Typography sx={{fontSize: 12,cursor: "pointer",textTransform: "uppercase",transition: "color 0.2s ease-in-out",":hover": {color: "#E95420",transition: "color 0.2s ease-in-out",},}}>
             Services
           </Typography>
@@ -61,9 +97,15 @@ const Navbar = () => {
             sx={{fontSize: 12,cursor: "pointer",textTransform: "uppercase",transition: "color 0.2s ease-in-out",":hover": {color: "#E95420",transition: "color 0.2s ease-in-out",},}}>
             Blog
           </Typography>
+
           <Button size="medium"variant="contained"endIcon={<EmojiPeopleIcon />}sx={{ml: 4,display: { xs: "none", sm: "none", md: "flex", lg: "flex" },}}>
             Say Hello
           </Button>
+          
+          */}
+           <Button size="medium"variant="contained"endIcon={<EmojiPeopleIcon />}sx={{ml: 4,display: { xs: "none", sm: "none", md: "flex", lg: "flex" },}}>
+              <a href="#contact" style={{color:'inherit', textDecoration:'none'}}> Say Hello</a>
+            </Button>
         </Box>
 
         {/* Hamburger Menu For Mobile Screen */}

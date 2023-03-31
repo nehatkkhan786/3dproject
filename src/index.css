@@ -16,8 +16,16 @@
   color:#A9A9A9;
   overflow-y: auto;
   scrollbar-width: none;
-
 }
+.nav-link{
+  transition: color 0.2s ease-in-out;
+}
+
+.nav-link :hover{
+  color: #E95420;
+  transition: color 0.2s ease-in-out,
+}
+
 .animeIcon{
   animation: bounce 2s infinite;
 }
