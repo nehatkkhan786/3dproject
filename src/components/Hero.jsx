@@ -50,7 +50,7 @@ const Hero = () => {
                   <RedditIcon onClick={()=>window.location = 'https://www.reddit.com/user/Nehatkhan786'} sx={{fontSize:{xs:26, md:28},':hover':{color:'#E95420'}}} />
               </Box>
              
-                <IconButton  className='animeIcon' sx={{mt:{xs:8, md:15, lg:15}}}>
+                <IconButton  className='animeIcon' sx={{mt:{xs:8, md:8, lg:8}}}>
                     <SouthIcon color='primary' sx={{ fontSize:{xs:40, md:50}}}/>
                 </IconButton>
               

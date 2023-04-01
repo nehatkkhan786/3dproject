@@ -119,15 +119,34 @@ const Navbar = () => {
           onClose={handleClose}
           PaperProps={{style: {backgroundColor: "#202020", color: "#A9A9A9",},}}>
 
-          <MenuItem>ABOUT</MenuItem>
-          <MenuItem>SERVICES</MenuItem>
-          <MenuItem>PROJECTS</MenuItem>
+          
+          <a href="#about" style={{textDecoration:'none', color:'inherit'}}>
+            <MenuItem onClick={()=>handleClose()}>
+              ABOUT
+            </MenuItem>
+          
+          </a>
+          <a href="#skills" style={{textDecoration:'none', color:'inherit'}}>
+            <MenuItem onClick={()=>handleClose()}>
+              SKILLS
+            </MenuItem>
+          
+          </a>
+          <a href="#skills" style={{textDecoration:'none', color:'inherit'}}>
+            <MenuItem onClick={()=>handleClose()}>
+              PROJECTS
+            </MenuItem>
+          
+          </a>
           <MenuItem>BLOG</MenuItem>
-          <MenuItem>
+
+          <a href="#contact" style={{textDecoration:'none', color:'inherit'}}>
+          <MenuItem  onClick={()=>handleClose()}>
             <Button variant="contained" endIcon={<EmojiPeopleIcon />}>
               SAY HELLO
             </Button>
           </MenuItem>
+          </a>
         </Menu>
       </Box>
     </Container>

@@ -32,7 +32,7 @@ const Skills = () => {
         <Grid container spacing={3} sx={{placeContent:'center'}} >
           {skill?.map((item)=>{
             return (
-              <Grid item >
+              <Grid item key={item.id} >
                 <Box sx={{padding:2, border:'2px solid transparent', borderImage:'linear-gradient(to bottom right, #E95420, transparent 50%) 1',}}>
                   <Box component='img' src={item.icon} sx={{width:{xs:50, md:120, lg:120}, height:{xs:50, md:120, lg:120}}}/>
                 </Box>
