@@ -2,6 +2,7 @@ import { Box, Button, CircularProgress, Container, FormControl, Input, InputBase
 import React, { useState } from 'react'
 import EmailIcon from '@mui/icons-material/Email';
 import axios from 'axios'
+import Alert from './Alert';
 
 const Contact = () => {
   const [name, setName]= useState('')
@@ -10,15 +11,29 @@ const Contact = () => {
 
   const [loading, setLoading] = useState(false)
 
+  const [openAlert, setOpenAlert]= useState(false)
+  const EMAIJS_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+
   const sendMail = async()=>{
     setLoading(true)
     try {
-     const response = await axios.post('https://api.nehat.dev/api/sendmessage/', {'name':name,"email":email, "message":message}, {
+     const response = await axios.post('https://api.emailjs.com/api/v1.0/email/send', {'service_id':"service_xirh7yp","template_id":"template_axqq62o", "user_id":`${EMAIJS_KEY}`, "template_params":{
+      "from_name":name,
+      "message":message,
+      "user_email":email,
+      "reply_to":email
+     }}, {
       headers:{
         'content-type':'application/json'
       }
      })
-     console.log(response)
+     if(response.request.status === 200){
+      setName('');
+      setEmail('');
+      setMessage('');
+      setOpenAlert(true)
+     }
+     console.log(response.request.status)
      setLoading(false)
     } catch (error) {
       console.log(error)
@@ -75,6 +90,7 @@ const Contact = () => {
              </Box>
         </Box>
       </Container>
+      <Alert openAlert={openAlert} setOpenAlert={setOpenAlert} message='Message Send Successfully' type='success'/>
     </Box>
   )
 }

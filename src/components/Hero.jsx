@@ -11,6 +11,7 @@ import SouthIcon from '@mui/icons-material/South';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
 import { Link } from 'react-scroll';
+import {motion} from 'framer-motion'
 
 
 
@@ -21,15 +22,26 @@ const Hero = () => {
     typeSpeed:70,
   })
 
+  
+
   return (
    <Box sx={{height:'100svh', scrollSnapAlign:'center'}}>
           <Navbar  />
           <Container maxWidth='md' sx={{height:'100%'}}>
             <Box sx={{display:'flex', flexDirection:'column',  alignItems:'center',  justifyContent:'center', mt:4,  width:'100%',}}>
               {/* Main Image */}
-              <Avatar  src={Profile} sx={{width:{xs:180, sm:180, md:250, lg:250}, height:'auto',boxShadow: 20,  border: "0.5px  solid gray", borderRadius:10 }} />
+              <motion.div 
+             
+              >
+                <Avatar  src={Profile} sx={{width:{xs:180, sm:180, md:250, lg:250}, height:'auto',boxShadow: 20,  border: "0.5px  solid gray", borderRadius:10 }} />
+              </motion.div>
                {/* <Box component='img' src={Profile} sx={{width:300, height:'auto', borderRadius:20, boxShadow:50}}/> */}
               {/* Greetings Typography */}
+              < motion.div
+               initial={{ x: '-100vw'}}
+               animate={{ x: 0 }}
+               transition={{ type:'spring', duration:1.5, bounce:0.2 }}
+              >
               <Box sx={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', mt:2}}>
                   <Typography sx={{fontSize:{xs:20, sm:18, md:20, lg:20}}}> Salam 👋 </Typography>
                   {/* What you are title */}
@@ -42,6 +54,7 @@ const Hero = () => {
                   </Box> */}
 
               </Box>
+              </motion.div>
               {/* socia Links */}
               <Box sx={{display:'flex', gap:3, mt:2}}>
                   <GitHubIcon onClick={()=>window.location = 'https://github.com/nehatkkhan786'}  sx={{fontSize:{xs:26, md:28},':hover':{color:'#E95420'}}}/>

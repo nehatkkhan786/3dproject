@@ -19,8 +19,9 @@ const Works = () => {
         >
 
               {/* Projects Image */}
-             
-                <Box component='img' src={Manxho} sx={{width:{xs:200, md:'100%', lg:'100%'}}} />
+                
+                  <Box component='img' src={Manxho} sx={{width:{xs:200, md:'100%', lg:'100%'}}} />
+               
             
 
 
